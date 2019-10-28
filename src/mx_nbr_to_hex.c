@@ -1,5 +1,8 @@
 #include "libmx.h"
 
+static void nbr_to_hex_rec(unsigned long n, char *s);
+static void add(int last_digit, char *s);
+
 char *mx_nbr_to_hex(unsigned long nbr) {
 	char *s = mx_strnew(50);
 
