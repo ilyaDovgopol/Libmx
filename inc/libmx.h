@@ -21,6 +21,9 @@ char *mx_strnew(const int size);
 int mx_strcmp(const char *s1, const char *s2);
 // mx_quicksort.c
 void mx_swap_char(char *s1, char *s2);
+void mx_strdel(char **str);
+// mx_get_char_index.c
+char *mx_strcpy(char *dst, const char *src);
 
 #endif
 
