@@ -8,6 +8,8 @@
 #include <stdlib.h>
 // mx_itoa.c
 // mx_quicksort.c
+// mx_get_char_index.c
+// mx_strndup.c
 
 // mx_print_unicode.c
 int mx_strlen(const char *s);
@@ -24,6 +26,7 @@ void mx_swap_char(char *s1, char *s2);
 void mx_strdel(char **str);
 // mx_get_char_index.c
 char *mx_strcpy(char *dst, const char *src);
+// mx_strndup.c
 
 #endif
 
