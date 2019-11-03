@@ -8,7 +8,7 @@ int mx_sqrt(int x) {
 	int end = x <= 46340 ? x : 46340;
 
 	while (start <= end) {
-		int mid = end + (start - end) / 2;
+		int mid = (start + end) / 2;
 
 		if (compare(mid, x) == 0) {
 			return mid;

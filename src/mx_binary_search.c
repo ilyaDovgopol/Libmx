@@ -1,17 +1,17 @@
 #include "libmx.h"
 
 int mx_binary_search(char **arr, int size, const char *s, int *count) {
-	if (!s) {
+	if (!arr) {
 		return -1;
 	}
 	int left = 0;
 	int right = size - 1;
 	*count = 0;
-	int mid;
 
 	while (left <= right) {
 		(*count)++;
-		mid = (left + right) / 2;
+		int mid = (left + right) / 2;
+		
 		if (mx_strcmp(s, arr[mid]) < 0) {
 			right = mid - 1;
 		}
