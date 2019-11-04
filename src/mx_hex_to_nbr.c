@@ -1,6 +1,9 @@
 static int get_dec_digit(char c);
 
 unsigned long mx_hex_to_nbr(const char *hex) {
+	if (!hex) {
+		return 0;
+	}
 	unsigned long n;
 	char *s = (char *) hex;
 

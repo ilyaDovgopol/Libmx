@@ -1,7 +1,7 @@
 #include "libmx.h"
 
 int mx_binary_search(char **arr, int size, const char *s, int *count) {
-	if (!arr) {
+	if (!arr || !(*arr)) {
 		return -1;
 	}
 	int left = 0;
