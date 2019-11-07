@@ -27,6 +27,7 @@ void mx_strdel(char **str);
 // mx_get_char_index.c
 char *mx_strcpy(char *dst, const char *src);
 // mx_strndup.c
+int mx_strncmp(const char *s1, const char *s2, int n);
 
 #endif
 
