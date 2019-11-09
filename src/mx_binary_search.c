@@ -12,11 +12,11 @@ int mx_binary_search(char **arr, int size, const char *s, int *count) {
 		(*count)++;
 		int mid = (left + right) / 2;
 		
-		if (mx_strcmp(s, arr[mid]) < 0) {
-			right = mid - 1;
-		}
-		else if (mx_strcmp(s, arr[mid]) > 0) {
+		if (mx_strcmp(s, arr[mid]) > 0) {
 			left = mid + 1;
+		}
+		else if (mx_strcmp(s, arr[mid]) < 0) {
+			right = mid - 1;
 		}
 		else {
 			return mid;

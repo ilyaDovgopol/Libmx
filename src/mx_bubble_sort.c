@@ -6,8 +6,8 @@ int mx_bubble_sort(char **arr, int size) {
 	}
 	int c = 0;
 
-	for (int i = 0; i < size - 1; i++) {
-		for (int j = 0; j < size - 1 - i; j++) {
+	for (int i = 1; i < size; i++) {
+		for (int j = 0; j < size - i; j++) {
 			if (mx_strcmp(arr[j], arr[j + 1]) > 0) {
 				c++;
 				char *t = arr[j];

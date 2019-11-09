@@ -4,10 +4,9 @@ unsigned long mx_hex_to_nbr(const char *hex) {
 	if (!hex) {
 		return 0;
 	}
-	unsigned long n;
 	char *s = (char *) hex;
+	unsigned long n = 0;
 
-	n = 0;
 	while (*s) {
 		n = 16 * n + get_dec_digit(*s);
 		s++;
