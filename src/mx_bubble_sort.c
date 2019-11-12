@@ -4,19 +4,19 @@ int mx_bubble_sort(char **arr, int size) {
 	if (!arr || !(*arr)) {
 		return 0;
 	}
-	int c = 0;
+	int count = 0;
 
 	for (int i = 1; i < size; i++) {
 		for (int j = 0; j < size - i; j++) {
 			if (mx_strcmp(arr[j], arr[j + 1]) > 0) {
-				c++;
-				char *t = arr[j];
+				count++;
+				char *swap = arr[j];
 
 				arr[j] = arr[j + 1];
-				arr[j + 1] = t;
+				arr[j + 1] = swap;
 			}
 		}
 	}
-	return c;
+	return count;
 }
 
