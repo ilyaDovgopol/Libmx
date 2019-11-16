@@ -10,6 +10,8 @@
 // mx_quicksort.c
 // mx_get_char_index.c
 // mx_strndup.c
+// mx_get_substr_index.c
+// mx_count_substr.c
 
 // mx_print_unicode.c
 int mx_strlen(const char *s);
@@ -28,6 +30,8 @@ void mx_strdel(char **str);
 char *mx_strcpy(char *dst, const char *src);
 // mx_strndup.c
 int mx_strncmp(const char *s1, const char *s2, int n);
+// mx_get_substr_index.c
+// mx_count_substr.c
 
 #endif
 
