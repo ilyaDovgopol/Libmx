@@ -12,6 +12,7 @@
 // mx_strndup.c
 // mx_get_substr_index.c
 // mx_count_substr.c
+#include <stdbool.h>
 
 // mx_print_unicode.c
 int mx_strlen(const char *s);
