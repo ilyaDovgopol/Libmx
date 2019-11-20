@@ -9,7 +9,6 @@
 // mx_itoa.c
 // mx_quicksort.c
 // mx_get_char_index.c
-// mx_strndup.c
 // mx_get_substr_index.c
 // mx_count_substr.c
 #include <stdbool.h>
@@ -29,7 +28,7 @@ void mx_swap_char(char *s1, char *s2);
 void mx_strdel(char **str);
 // mx_get_char_index.c
 char *mx_strcpy(char *dst, const char *src);
-// mx_strndup.c
+char *mx_strncpy(char *dst, const char *src, int len);
 int mx_strncmp(const char *s1, const char *s2, int n);
 // mx_get_substr_index.c
 // mx_count_substr.c

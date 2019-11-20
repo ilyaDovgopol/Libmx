@@ -1,5 +1,5 @@
 double mx_pow(double n, unsigned int pow) {
-	if (pow == 0) {
+	if (!pow) {
 		return 1;
 	}
 	double res = 1;

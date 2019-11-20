@@ -1,7 +1,7 @@
 static int compare(int current, int x);
 
 int mx_sqrt(int x) {
-	if (x == 0 || x == 1) {
+	if (!x || x == 1) {
 		return x;
 	}
 	int start = 1;

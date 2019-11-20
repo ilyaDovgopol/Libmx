@@ -1,12 +1,12 @@
 #include "libmx.h"
 
-int mx_strncmp(const char *s1, const char *s2, int n) {
-    if (n == 0 && (s1 == NULL || s2 == NULL)) {
+int mx_strncmp(const char *s1, const char *s2, size_t n) {
+    if (!n && (!s1 || !s2)) {
         return 0;
     }
-    int i = 0;
+    size_t i = 0;
 
-    while (s1[i] == s2[i] && s1[i] && s2[i] && (i < n || n < 0)) {
+    while (s1[i] == s2[i] && s1[i] && s2[i] && i < n) {
         i++;
     }
     if (i == n) {
