@@ -10,7 +10,6 @@
 // mx_quicksort.c
 // mx_get_char_index.c
 // mx_get_substr_index.c
-// mx_count_substr.c
 #include <stdbool.h>
 
 // mx_print_unicode.c
@@ -31,7 +30,7 @@ char *mx_strcpy(char *dst, const char *src);
 char *mx_strncpy(char *dst, const char *src, int len);
 int mx_strncmp(const char *s1, const char *s2, int n);
 // mx_get_substr_index.c
-// mx_count_substr.c
+char *mx_strstr(const char *haystack, const char *needle);
 
 #endif
 
