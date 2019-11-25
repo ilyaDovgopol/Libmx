@@ -33,6 +33,8 @@ int mx_strncmp(const char *s1, const char *s2, int n);
 char *mx_strstr(const char *haystack, const char *needle);
 bool mx_isspace(char c);
 char *mx_strndup(const char *s1, size_t n);
+char *mx_strtrim(const char *str);
+// mx_strtrim.c
 
 #endif
 
