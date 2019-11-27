@@ -6,6 +6,9 @@ static void add(int last_digit, char *s);
 char *mx_nbr_to_hex(unsigned long nbr) {
 	char *s = mx_strnew(16);
 
+	if (!s) {
+		return NULL;
+	}
 	nbr_to_hex_rec(nbr, s);
 	return s;
 }

@@ -9,9 +9,6 @@ char *mx_strndup(const char *s1, size_t n) {
 	len = n < len ? n : len;
 	char *s = mx_strncpy(mx_strnew(len), s1, len);
 
-	if (!s) {
-		return NULL;
-	}
 	return s;
 }
 
