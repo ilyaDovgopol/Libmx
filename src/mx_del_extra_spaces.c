@@ -20,7 +20,7 @@ char *mx_del_extra_spaces(const char *str) {
 	int j = 0;
 	bool flag = false;
 
-	while (s[i] != '\0') {
+	while (s[i]) {
 		if (!mx_isspace(s[i])) {
 			add_char_in_string(ss, s[i], &j);
 			flag = true;
