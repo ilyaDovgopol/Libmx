@@ -1,9 +1,7 @@
 #include "libmx.h"
 
 int mx_binary_search(char **arr, int size, const char *s, int *count) {
-	if (!arr || !(**arr) || !s) {
-		return -1;
-	}
+	if (!arr || !(**arr) || !s) return -1;
 	int left = 0;
 	int right = size - 1;
 
@@ -18,9 +16,8 @@ int mx_binary_search(char **arr, int size, const char *s, int *count) {
 		else if (mx_strcmp(s, arr[mid]) < 0) {
 			right = mid - 1;
 		}
-		else {
+		else
 			return mid;
-		}
 	}
 	*count = 0;
 	return -1;
