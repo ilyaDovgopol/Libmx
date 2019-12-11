@@ -6,8 +6,8 @@ char *mx_strncpy(char *dst, const char *src, int len) {
         i++;
     }
     while (i < len) {
-      dst[i] = '\0';
-      i++;
+        dst[i] = '\0';
+        i++;
     }
     return dst;
 }
