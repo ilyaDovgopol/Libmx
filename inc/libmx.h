@@ -34,7 +34,7 @@ char *mx_strstr(const char *haystack, const char *needle);
 bool mx_isspace(char c);
 char *mx_strndup(const char *s1, size_t n);
 char *mx_strtrim(const char *str);
-// mx_strtrim.c
+// mx_del_extra_spaces.c
 
 #endif
 
