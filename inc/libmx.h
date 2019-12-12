@@ -4,8 +4,8 @@
 #include <unistd.h>
 // mx_print_unicode.c
 // mx_print_strarr.c
-#include <stddef.h>
 #include <stdlib.h>
+#include <stddef.h>
 // mx_itoa.c
 // mx_quicksort.c
 // mx_get_char_index.c
