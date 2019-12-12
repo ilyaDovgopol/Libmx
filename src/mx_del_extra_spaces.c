@@ -3,15 +3,13 @@
 static void add_char_in_string(char *s, char c, int *j);
 
 char *mx_del_extra_spaces(const char *str) {
-	if (!str) return NULL;
+	if (!str)
+		return NULL;
 	char *s = mx_strtrim(str);
-
-	if (!s) return NULL;
 	char *ss = mx_strnew(mx_strlen(s));
 	int j = 0;
 	bool flag = false;
 
-	if (!ss) return NULL;
 	for (int i = 0; s[i]; i++) {
 		if (!mx_isspace(s[i])) {
 			add_char_in_string(ss, s[i], &j);
