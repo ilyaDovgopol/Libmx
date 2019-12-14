@@ -35,6 +35,10 @@ bool mx_isspace(char c);
 char *mx_strndup(const char *s1, size_t n);
 char *mx_strtrim(const char *str);
 // mx_del_extra_spaces.c
+int mx_count_words(const char *str, char c);
+// mx_count_words.c
+char *mx_strdup(const char *s1);
+char *mx_strcat(char *restrict s1, const char *restrict s2);
 
 #endif
 
