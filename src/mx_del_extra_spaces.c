@@ -17,7 +17,7 @@ char *mx_del_extra_spaces(const char *str) {
     ss = mx_strnew(mx_strlen(s));
     if (!ss)
         return NULL;
-    for (int i = 0; s[i]; i++) {
+    for (int i = 0; s[i] != '\0'; i++) {
         if (!mx_isspace(s[i])) {
             add_char_in_string(ss, s[i], &j);
             flag = true;
