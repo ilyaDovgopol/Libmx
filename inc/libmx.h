@@ -67,6 +67,7 @@ char *mx_strcat(char *restrict s1, const char *restrict s2);
 // mx_memmem.c
 // mx_memmove.c
 // mx_realloc.c
+t_list *mx_create_node(void *data);
 
 #endif
 
