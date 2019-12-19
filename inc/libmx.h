@@ -3,7 +3,6 @@
 
 #include <unistd.h>
 // mx_print_unicode.c
-// mx_print_strarr.c
 #include <stdlib.h>
 #include <stddef.h>
 // mx_itoa.c
@@ -31,7 +30,7 @@ typedef struct s_list {
 
 // mx_print_unicode.c
 int mx_strlen(const char *s);
-// mx_print_strarr.c
+void mx_printstr(const char *s);
 void mx_printchar(char c);
 // mx_sqrt.c
 char *mx_strnew(const int size);
