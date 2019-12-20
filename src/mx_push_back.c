@@ -15,7 +15,10 @@ void mx_push_back(t_list **list, void *data) {
         *list = node;
         return;
     }
-    for (i = *list; i->next != NULL; i = i->next);
+    i = *list;
+    while (i->next) {
+        i = i->next;
+    }
     i->next = node;
 }
 
