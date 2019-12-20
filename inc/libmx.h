@@ -6,8 +6,6 @@
 #include <stddef.h>
 #include <stdlib.h>
 // mx_quicksort.c
-// mx_get_char_index.c
-// mx_get_substr_index.c
 #include <stdbool.h>
 #include <fcntl.h>
 // mx_read_line.c
@@ -42,10 +40,8 @@ int mx_strcmp(const char *s1, const char *s2);
 // mx_quicksort.c
 void mx_swap_char(char *s1, char *s2);
 void mx_strdel(char **str);
-// mx_get_char_index.c
 char *mx_strncpy(char *dst, const char *src, int len);
 int mx_strncmp(const char *s1, const char *s2, int n);
-// mx_get_substr_index.c
 char *mx_strstr(const char *haystack, const char *needle);
 bool mx_isspace(char c);
 char *mx_strndup(const char *s1, size_t n);
