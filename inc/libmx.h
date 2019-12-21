@@ -10,8 +10,6 @@
 #include <fcntl.h>
 // mx_read_line.c
 // mx_replace_substr.c
-// mx_memset.c
-// mx_memcpy.c
 // mx_memccpy.c
 // mx_memcmp.c
 // mx_memchr.c
@@ -52,8 +50,6 @@ int mx_count_words(const char *str, char c);
 char *mx_strcat(char *restrict s1, const char *restrict s2);
 // mx_read_line.c
 // mx_replace_substr.c
-// mx_memset.c
-// mx_memcpy.c
 // mx_memccpy.c
 // mx_memcmp.c
 // mx_memchr.c
