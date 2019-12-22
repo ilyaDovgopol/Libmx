@@ -7,7 +7,6 @@ char *mx_del_extra_spaces(const char *str) {
     char *ss;
     int j = 0;
     bool flag = false;
-    char *new_str;
 
     if (!str)
         return NULL;
@@ -27,10 +26,10 @@ char *mx_del_extra_spaces(const char *str) {
             flag = false;
         }
     }
-    new_str = mx_strndup(ss, mx_strlen(ss));
-    free(ss);
     free(s);
-    return new_str;
+    s = mx_strndup(ss, mx_strlen(ss));
+    free(ss);
+    return s;
 }
 
 static void add_char_in_string(char *s, char c, int *j) {

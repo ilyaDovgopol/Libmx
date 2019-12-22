@@ -27,7 +27,6 @@ typedef struct s_list {
 int mx_strlen(const char *s);
 void mx_printstr(const char *s);
 void mx_printchar(char c);
-// mx_sqrt.c
 char *mx_strnew(const int size);
 // mx_nbr_to_hex.c
 // mx_hex_to_nbr.c
