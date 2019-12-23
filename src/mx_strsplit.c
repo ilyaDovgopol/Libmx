@@ -4,18 +4,18 @@ static bool is_next_word(int *start, int *end, char *s, char c);
 static void delete_arr(char **arr, int current);
 
 char **mx_strsplit(const char *s, char c) {
-    int size;
+    int i;
     char **arr = NULL;
     int start;
     int end = -1;
-    int i = 0;
 
     if (!s)
         return NULL;
-    size = mx_count_words(s, c);
-    arr = (char **)malloc((size + 1) * sizeof(char *));
+    i = mx_count_words(s, c);
+    arr = (char **)malloc((i + 1) * sizeof(char *));
     if (!arr)
         return NULL;
+    i = 0;
     while (is_next_word(&start, &end, (char *)s, c)) {
         char *str = mx_strnew(end - start);
 
