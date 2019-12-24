@@ -10,10 +10,6 @@
 #include <fcntl.h>
 // mx_read_line.c
 // mx_replace_substr.c
-// mx_memccpy.c
-// mx_memcmp.c
-// mx_memchr.c
-// mx_memrchr.c
 // mx_memmem.c
 // mx_memmove.c
 // mx_realloc.c
@@ -45,14 +41,9 @@ char *mx_strndup(const char *s1, size_t n);
 char *mx_strtrim(const char *str);
 // mx_del_extra_spaces.c
 int mx_count_words(const char *str, char c);
-// mx_count_words.c
 char *mx_strcat(char *restrict s1, const char *restrict s2);
 // mx_read_line.c
 // mx_replace_substr.c
-// mx_memccpy.c
-// mx_memcmp.c
-// mx_memchr.c
-// mx_memrchr.c
 // mx_memmem.c
 // mx_memmove.c
 // mx_realloc.c
