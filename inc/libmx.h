@@ -10,9 +10,7 @@
 #include <fcntl.h>
 // mx_read_line.c
 // mx_replace_substr.c
-// mx_memmem.c
-// mx_memmove.c
-// mx_realloc.c
+#include <malloc/malloc.h>
 
 typedef struct s_list {
     void *data;
@@ -44,9 +42,9 @@ int mx_count_words(const char *str, char c);
 char *mx_strcat(char *restrict s1, const char *restrict s2);
 // mx_read_line.c
 // mx_replace_substr.c
-// mx_memmem.c
-// mx_memmove.c
-// mx_realloc.c
+int mx_memcmp(const void *s1, const void *s2, size_t n);
+void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n);
+void *mx_memmove(void *dst, const void *src, size_t len);
 t_list *mx_create_node(void *data);
 
 #endif
