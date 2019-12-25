@@ -7,8 +7,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <fcntl.h>
-// mx_replace_substr.c
 #include <malloc/malloc.h>
+#include <stdio.h>
+#include <string.h>
 
 typedef struct s_list {
     void *data;
@@ -40,6 +41,7 @@ char *mx_strcat(char *restrict s1, const char *restrict s2);
 int mx_get_char_index(const char *str, char c);
 char *mx_strjoin(const char *s1, const char *s2);
 // mx_replace_substr.c
+int mx_get_substr_index(const char *str, const char *sub);
 int mx_memcmp(const void *s1, const void *s2, size_t n);
 void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n);
 void *mx_memmove(void *dst, const void *src, size_t len);
