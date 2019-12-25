@@ -5,7 +5,6 @@
 #include <wchar.h>
 #include <stddef.h>
 #include <stdlib.h>
-// mx_quicksort.c
 #include <stdbool.h>
 #include <fcntl.h>
 // mx_read_line.c
