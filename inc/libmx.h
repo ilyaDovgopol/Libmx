@@ -2,7 +2,7 @@
 #define LIBMX_H
 
 #include <unistd.h>
-// mx_print_unicode.c
+#include <wchar.h>
 #include <stddef.h>
 #include <stdlib.h>
 // mx_quicksort.c
@@ -17,7 +17,6 @@ typedef struct s_list {
     struct s_list *next;
 }        t_list;
 
-// mx_print_unicode.c
 int mx_strlen(const char *s);
 void mx_printstr(const char *s);
 void mx_printchar(char c);
