@@ -7,7 +7,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <fcntl.h>
-// mx_read_line.c
 // mx_replace_substr.c
 #include <malloc/malloc.h>
 
@@ -38,7 +37,8 @@ char *mx_strtrim(const char *str);
 // mx_del_extra_spaces.c
 int mx_count_words(const char *str, char c);
 char *mx_strcat(char *restrict s1, const char *restrict s2);
-// mx_read_line.c
+int mx_get_char_index(const char *str, char c);
+char *mx_strjoin(const char *s1, const char *s2);
 // mx_replace_substr.c
 int mx_memcmp(const void *s1, const void *s2, size_t n);
 void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n);
