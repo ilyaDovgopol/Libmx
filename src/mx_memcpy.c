@@ -1,8 +1,8 @@
 #include "libmx.h"
 
 void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n) {
-    unsigned char *dest = (unsigned char *)dst;
-    unsigned char *s = (unsigned char *)src;
+    char *restrict dest = dst;
+    const char *restrict s = src;
 
     if (!dst && !src) {
         return NULL;

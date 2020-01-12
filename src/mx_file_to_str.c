@@ -11,7 +11,7 @@ char *mx_file_to_str(const char *file) {
     }
     while ((n = read(fd, buf, 1024)) > 0) {
         buf[n] = '\0';
-        s = mx_strdup(buf);
+        s = mx_strjoin(s, buf);
     }
     close(fd);
     return s;

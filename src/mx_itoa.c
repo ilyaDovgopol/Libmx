@@ -6,15 +6,14 @@ char *mx_itoa(int number) {
     char *s;
 
     if (number == -2147483648) {
-        s = mx_strdup("-2147483648");
-        return s;
+        return mx_strdup("-2147483648");
     }
-    s = mx_strnew(16);
+    s = mx_strnew(11);
     if (!s) {
         return NULL;
     }
     if (number < 0) {
-        s[0] = '-';
+        *s = '-';
         number = -number;
     }
     nbr_to_dec_rec(number, s);
@@ -24,18 +23,12 @@ char *mx_itoa(int number) {
 static void nbr_to_dec_rec(int n, char *s) {
     int last_digit = n % 10;
 
-    if (n < 10) {
-        while (*s) {
-            s++;
-        }
-        *s = last_digit + '0';
-    }
-    else {
+    if (n >= 10) {
         nbr_to_dec_rec(n / 10, s);
-        while (*s) {
-            s++;
-        }
-        *s = last_digit + '0';
     }
+    while (*s) {
+        s++;
+    }
+    *s = last_digit + 48;
 }
 
