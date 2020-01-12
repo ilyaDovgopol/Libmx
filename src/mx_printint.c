@@ -9,11 +9,11 @@ void mx_printint(int n) {
         mx_printint(n * -1);
     }
     else if (n < 10) {
-        mx_printchar(n + '0');
+        mx_printchar(n + 48);
     }
     else {
         mx_printint(n / 10);
-        mx_printchar(n % 10 + '0');
+        mx_printchar(n % 10 + 48);
     }
 }
 

@@ -23,19 +23,19 @@ const char *str, const char *sub, const char *replace) {
 }
 
 static bool replace_sub(char **s, char *str, char *sub, char *replace) {
-    int index = mx_get_substr_index(str, sub);
+    int indx = mx_get_substr_index(str, sub);
     int str_len = mx_strlen(str);
     int sub_len = mx_strlen(sub);
     int replace_len = mx_strlen(replace);
 
-    if (index != -1) {
+    if (indx != -1) {
         *s = mx_strnew(str_len - sub_len + replace_len);
         if (!s) {
-            return NULL;
+            return false;
         }
-        mx_strncpy(*s, str, index);
+        mx_strncpy(*s, str, indx);
         mx_strcat(*s, replace);
-        mx_strcat(*s, &str[index + sub_len]);
+        mx_strcat(*s, &str[indx + sub_len]);
         return true;
     }
     *s = mx_strdup(str);
