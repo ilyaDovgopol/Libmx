@@ -7,7 +7,8 @@ char *mx_strndup(const char *s1, size_t n) {
     if (!s) {
         return NULL;
     }
-    s = mx_strncpy(s, s1, len);
+    mx_strncpy(s, s1, len);
+    s[len] = '\0';
     return s;
 }
 

@@ -6,7 +6,7 @@ char *mx_strdup(const char *s1) {
     if (!s) {
         return NULL;
     }
-    s = mx_strcpy(s, s1);
+    mx_strcpy(s, s1);
     return s;
 }
 
