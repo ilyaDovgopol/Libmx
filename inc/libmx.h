@@ -1,7 +1,6 @@
 #ifndef LIBMX_H
 #define LIBMX_H
 
-#include <stdio.h>
 #include <unistd.h>
 #include <wchar.h>
 #include <stddef.h>
