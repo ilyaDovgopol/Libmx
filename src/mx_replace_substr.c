@@ -31,7 +31,7 @@ static bool replace_sub(char **s, char *str, char *sub, char *replace) {
     if (indx != -1) {
         *s = mx_strnew(str_len - sub_len + replace_len);
         if (!s) {
-            return false;
+            return NULL;
         }
         mx_strncpy(*s, str, indx);
         mx_strcat(*s, replace);
