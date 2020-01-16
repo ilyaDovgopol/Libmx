@@ -14,10 +14,11 @@ int mx_quicksort(char **arr, int left, int right) {
         return 0;
     while (i <= j) {
         quicksort(arr, &i, arr[(left + right) / 2], &j);
-        if (i <= j)
+        if (i <= j) {
             swap(&arr[i], &arr[j], &count);
-        i++;
-        j--;
+            i++;
+            j--;
+        }
     }
     if (left < j)
         count += mx_quicksort(arr, left, j);

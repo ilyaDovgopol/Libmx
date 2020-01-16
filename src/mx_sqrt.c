@@ -4,11 +4,12 @@ int mx_sqrt(int x) {
 
     while (start <= end) {
         int mid = (start + end) / 2;
+        int n = mid * mid - x;
 
-        if (mid * mid - x < 0) {
+        if (n < 0) {
             start = mid + 1;
         }
-        else if (mid * mid - x > 0) {
+        else if (n > 0) {
             end = mid - 1;
         }
         else {
