@@ -8,7 +8,7 @@ char *mx_del_extra_spaces(const char *str) {
     int j = 0;
     bool flag = false;
 
-    if (!str) {
+    if (!str || !(*str)) {
         return NULL;
     }
     s = mx_strtrim(str);

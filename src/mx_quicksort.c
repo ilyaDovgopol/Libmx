@@ -8,7 +8,7 @@ int mx_quicksort(char **arr, int left, int right) {
     int j = right;
     int count = 0;
 
-    if (!arr)
+    if (!arr || !(*arr))
         return -1;
     if (left >= right)
         return 0;
