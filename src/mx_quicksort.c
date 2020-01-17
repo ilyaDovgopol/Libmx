@@ -28,10 +28,12 @@ int mx_quicksort(char **arr, int left, int right) {
 }
 
 static void quicksort(char **arr, int *i, char *pivot, int *j) {
-    while (mx_strlen(arr[*i]) - mx_strlen(pivot) < 0) {
+    int len = mx_strlen(pivot);
+
+    while (mx_strlen(arr[*i]) - len < 0) {
         (*i)++;
     }
-    while (mx_strlen(arr[*j]) - mx_strlen(pivot) > 0) {
+    while (mx_strlen(arr[*j]) - len > 0) {
         (*j)--;
     }
 }

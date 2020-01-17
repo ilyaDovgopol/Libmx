@@ -7,7 +7,7 @@ const void *big, size_t big_len, const void *little, size_t little_len) {
     const char *needle = little;
 
     if (!little_len) {
-        return (void *)haystack;
+        return NULL;
     }
     while (haystack <= last) {
         if (*haystack == *needle) {
