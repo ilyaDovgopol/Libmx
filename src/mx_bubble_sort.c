@@ -3,7 +3,7 @@
 int mx_bubble_sort(char **arr, int size) {
     int count = 0;
 
-    if (!arr || !(**arr)) {
+    if (!arr || !(*arr)) {
         return 0;
     }
     for (int i = 1; i < size; i++) {
