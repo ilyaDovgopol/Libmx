@@ -6,11 +6,8 @@ char *mx_replace_substr(
 const char *str, const char *sub, const char *replace) {
     char *s;
 
-    if (!str || !sub || !replace) {
+    if (!str || !(*str) || !sub || !(*sub) || !replace || !(*replace)) {
         return NULL;
-    }
-    if (!(*replace)) {
-        return (char *)str;
     }
     replace_sub(&s, (char *)str, (char *)sub, (char *)replace);
     str = s;
