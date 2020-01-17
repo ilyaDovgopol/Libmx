@@ -1,9 +1,11 @@
 #include "libmx.h"
 
 char *mx_strndup(const char *s1, size_t n) {
-    size_t len = n < (size_t) mx_strlen(s1) ? n : mx_strlen(s1);
-    char *s = mx_strnew(len);
+    size_t len = mx_strlen(s1);
+    char *s;
 
+    len = n <= len ? n : len;
+    s = mx_strnew(len);
     if (!s) {
         return NULL;
     }
