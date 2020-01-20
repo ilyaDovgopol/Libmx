@@ -14,6 +14,9 @@ char *mx_strtrim(const char *str) {
     while (mx_isspace(str[end])) {
         end--;
     }
+    if (end == -1) {
+        return mx_strnew(0);
+    }
     return mx_strndup(&str[start], end - start + 1);
 }
 

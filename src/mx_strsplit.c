@@ -15,9 +15,9 @@ char **mx_strsplit(const char *s, char c) {
         return NULL;
     i = 0;
     while (is_next_word(&start, &end, (char *)s, c)) {
-        char *str = mx_strnew(end - start);
+        char *str = mx_strnew(end - start + 1);
 
-        mx_strncpy(str, &s[start], end - start);
+        mx_strncpy(str, &s[start], end - start + 1);
         arr[i] = str;
         i++;
     }
@@ -37,6 +37,7 @@ static bool is_next_word(int *start, int *end, char *s, char c) {
     while (s[*end] != c && s[*end]) {
         (*end)++;
     }
+    (*end)--;
     return true;
 }
 

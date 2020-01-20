@@ -2,6 +2,7 @@
 
 static void quicksort(char **arr, int *i, char *pivot, int *j);
 static void swap(char **s1, char **s2, int *count);
+static void incr_and_decr(int *i, int *j);
 
 int mx_quicksort(char **arr, int left, int right) {
     int i = left;
@@ -16,8 +17,7 @@ int mx_quicksort(char **arr, int left, int right) {
         quicksort(arr, &i, arr[(left + right) / 2], &j);
         if (i <= j) {
             swap(&arr[i], &arr[j], &count);
-            i++;
-            j--;
+            incr_and_decr(&i, &j);
         }
     }
     if (left < j)
@@ -47,5 +47,10 @@ static void swap(char **s1, char **s2, int *count) {
     *s1 = *s2;
     *s2 = swap;
     (*count)++;
+}
+
+static void incr_and_decr(int *i, int *j) {
+    (*i)++;
+    (*j)--;
 }
 
