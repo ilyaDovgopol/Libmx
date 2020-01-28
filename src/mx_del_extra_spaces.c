@@ -3,8 +3,8 @@
 static void add_char_in_string(char *s, char c, int *j, bool *flag);
 
 char *mx_del_extra_spaces(const char *str) {
-    char *s;
-    char *ss;
+    char *s = NULL;
+    char *ss = NULL;
     int j = 0;
     bool flag = false;
 

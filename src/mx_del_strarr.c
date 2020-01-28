@@ -1,7 +1,7 @@
 #include "libmx.h"
 
 void mx_del_strarr(char ***arr) {
-    char **p;
+    char **p = NULL;
 
     if (!arr || !(*arr)) {
         return;

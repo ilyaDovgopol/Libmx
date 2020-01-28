@@ -1,7 +1,7 @@
 #include "libmx.h"
 
 char *mx_strjoin(const char *s1, const char *s2) {
-    char *s;
+    char *s = NULL;
 
     if (!s1 && !s2) {
         return NULL;

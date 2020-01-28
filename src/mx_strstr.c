@@ -1,7 +1,7 @@
 #include "libmx.h"
 
 char *mx_strstr(const char *haystack, const char *needle) {
-    int len;
+    int len = 0;
 
     if (!(*needle)) {
         return (char *)haystack;

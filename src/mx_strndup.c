@@ -2,7 +2,7 @@
 
 char *mx_strndup(const char *s1, size_t n) {
     size_t len = mx_strlen(s1);
-    char *s;
+    char *s = NULL;
 
     len = n <= len ? n : len;
     s = mx_strnew(len);

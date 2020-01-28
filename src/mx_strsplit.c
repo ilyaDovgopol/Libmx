@@ -5,7 +5,7 @@ static bool is_next_word(int *start, int *end, char *s, char c);
 char **mx_strsplit(const char *s, char c) {
     int i = mx_count_words(s, c);
     char **arr = NULL;
-    int start;
+    int start = 0;
     int end = -1;
 
     if (!s || !(*s) || !i)

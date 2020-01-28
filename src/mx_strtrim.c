@@ -2,7 +2,7 @@
 
 char *mx_strtrim(const char *str) {
     int start = 0;
-    int end;
+    int end = 0;
 
     if (!str || !(*str)) {
         return NULL;

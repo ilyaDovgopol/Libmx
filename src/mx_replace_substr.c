@@ -4,7 +4,7 @@ static bool replace_sub(char **s, char *str, char *sub, char *replace);
 
 char *mx_replace_substr(
 const char *str, const char *sub, const char *replace) {
-    char *s;
+    char *s = NULL;
 
     if (!str || !(*str) || !sub || !(*sub) || !replace || !(*replace)) {
         return NULL;

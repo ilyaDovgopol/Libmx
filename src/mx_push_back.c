@@ -1,8 +1,8 @@
 #include "libmx.h"
 
 void mx_push_back(t_list **list, void *data) {
-    t_list *node;
-    t_list *i;
+    t_list *node = NULL;
+    t_list *i = NULL;
 
     if (!list) {
         return;

@@ -3,7 +3,7 @@
 static void nbr_to_dec_rec(int n, char *s);
 
 char *mx_itoa(int number) {
-    char *s;
+    char *s = NULL;
 
     if (number == -2147483648) {
         return mx_strdup("-2147483648");

@@ -1,5 +1,5 @@
 void mx_swap_char(char *s1, char *s2) {
-    char swap;
+    char swap = ' ';
 
     if (!s1 || !s2) {
         return;
